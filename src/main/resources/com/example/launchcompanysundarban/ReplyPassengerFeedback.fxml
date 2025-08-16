@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.launchcompanysundarban.ReplyPassengerFeedbackController" spacing="10">
+    <padding>
+        <Insets top="15.0" right="15.0" bottom="15.0" left="15.0"/>
+    </padding>
+
+    <HBox spacing="8">
+        <Button fx:id="backBtn" text="◀ Back"/>
+        <Label text="Reply Passenger Feedback" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    </HBox>
+
+    <TableView fx:id="feedbackTable" prefHeight="240">
+        <columns>
+            <TableColumn fx:id="colPassenger" text="Passenger" prefWidth="180"/>
+            <TableColumn fx:id="colFeedback" text="Feedback" prefWidth="420"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="8">
+        <TextField fx:id="replyField" promptText="Write a helpful reply (e.g., apology + action)"/>
+        <Button fx:id="replyBtn" text="Reply"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;"/>
+</VBox>

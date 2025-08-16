@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.launchcompanysundarban.AssignCrewController" spacing="10">
+    <padding>
+        <Insets top="15.0" right="15.0" bottom="15.0" left="15.0"/>
+    </padding>
+
+    <HBox spacing="8">
+        <Button fx:id="backBtn" text="◀ Back"/>
+        <Label text="Assign Crew" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <CheckBox fx:id="onlyUnassigned" text="Only Unassigned"/>
+    </HBox>
+
+    <TableView fx:id="tripsTable" prefHeight="240">
+        <columns>
+            <TableColumn fx:id="colTripId" text="Trip ID" prefWidth="160"/>
+            <TableColumn fx:id="colRoute" text="Route" prefWidth="260"/>
+            <TableColumn fx:id="colDate" text="Date" prefWidth="120"/>
+            <TableColumn fx:id="colTime" text="Time" prefWidth="100"/>
+            <TableColumn fx:id="colCrew" text="Crew" prefWidth="160"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="8">
+        <Label text="Crew Member:"/>
+        <TextField fx:id="crewField" promptText="e.g., Md. Karim / Team A"/>
+        <Button fx:id="assignBtn" text="Assign"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;"/>
+</VBox>

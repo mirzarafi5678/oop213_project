@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_individual.FinancialOfficerDashboardController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: tan;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#calculateRevenue" text="Calculate Profit">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#financialRecord" text="Financial Record">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="DataEntry" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#DataEntry" text="DataEntryButton">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="62.0" mnemonicParsing="false" onAction="#budgetAllocation" text="Budget Allocation">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="88.0" mnemonicParsing="false" onAction="#ticketPrice" text="Ticket Price">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#paymentStatus" text="Payment Status">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="140.0" mnemonicParsing="false" onAction="#utilitesExpenses" text="Utilites Expenses">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="166.0" mnemonicParsing="false" onAction="#salaryIncrease" text="Salary Increase">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label prefHeight="36.0" prefWidth="653.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="208.0" layoutY="232.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="26.0" prefWidth="169.0" text="Log Out" />
+            <Text layoutX="194.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Financial Officer Dashboard" wrappingWidth="164.21630859375" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

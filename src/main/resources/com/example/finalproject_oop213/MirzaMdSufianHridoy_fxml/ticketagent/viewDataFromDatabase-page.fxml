@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="802.0" prefWidth="1002.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_oop213.MirzaMdSufianHridoy.TicketAgentController.viewAllDataController">
+   <children>
+      <TableView fx:id="tableview" layoutX="27.0" layoutY="118.0" prefHeight="334.0" prefWidth="919.0">
+        <columns>
+          <TableColumn fx:id="passengernamecolumn" prefWidth="147.0" text="Passenger name" />
+            <TableColumn fx:id="GenderColumn" prefWidth="96.0" text="Gender" />
+          <TableColumn fx:id="contactnumbercolumn" prefWidth="158.0" text="Conatct Number" />
+            <TableColumn fx:id="tripnumbercolumn" prefWidth="118.0" text="Trip Number" />
+            <TableColumn fx:id="numberofseatcolumn" prefWidth="105.0" text="number of seats" />
+            <TableColumn fx:id="cargospacecolumn" prefWidth="96.0" text="cargo space" />
+            <TableColumn fx:id="seattypecolumn" prefWidth="96.0" text="Seat type" />
+            <TableColumn fx:id="totalpricecolumn1" prefWidth="96.0" text="Total Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="315.0" layoutY="551.0" mnemonicParsing="false" onAction="#filterbutton" text="Filter Tbale" />
+      <TextField fx:id="spacenumberTF" layoutX="253.0" layoutY="551.0" prefHeight="25.0" prefWidth="53.0" />
+      <Button layoutX="182.0" layoutY="722.0" mnemonicParsing="false" onAction="#dashboardbutton" text="Back to dashboard" />
+      <Label layoutX="112.0" layoutY="555.0" text="Filter table by cargo space" />
+      <Button layoutX="76.0" layoutY="470.0" mnemonicParsing="false" onAction="#hightspaidnamebutton" text="Show the name of the highest-paid ticket buyer among passengers" />
+      <Label fx:id="nameshow" layoutX="467.0" layoutY="461.0" prefHeight="43.0" prefWidth="300.0" style="-fx-border-color: black;" />
+      <Button layoutX="327.0" layoutY="50.0" mnemonicParsing="false" onAction="#loadtablebutton" text="Load Data" />
+      <Label layoutX="19.0" layoutY="101.0" text="Passenger Data" />
+      <Button layoutX="76.0" layoutY="599.0" mnemonicParsing="false" onAction="#totalbookedbutton" text="Total Number of seat booked" />
+      <Label fx:id="showtotalbook" layoutX="253.0" layoutY="590.0" prefHeight="43.0" prefWidth="90.0" style="-fx-border-color: black;" />
+   </children>
+</AnchorPane>

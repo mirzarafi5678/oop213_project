@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_oop213.MirzaMdSufianHridoy.PassengerController.PassengerDashboardController">
+   <children>
+      <Label layoutX="247.0" layoutY="34.0" prefHeight="70.0" prefWidth="257.0" text="Passenger Dashboard">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="41.0" layoutY="121.0" mnemonicParsing="false" onAction="#BuyLaunchTripTicketButton" text="Buy Launch Trip Ticket" />
+      <Button layoutX="41.0" layoutY="178.0" mnemonicParsing="false" onAction="#CancelLaunchTripTicketButton" text="Cancel Launch Trip Ticket" />
+      <Button layoutX="41.0" layoutY="229.0" mnemonicParsing="false" onAction="#ViewOtherScheduleButton" text="View Other Trip Schedule" />
+      <Button layoutX="50.0" layoutY="283.0" mnemonicParsing="false" onAction="#RateAllServiceWithFeedbackButton" text="Rate All Service with Feedback" />
+      <Button layoutX="50.0" layoutY="342.0" mnemonicParsing="false" onAction="#MakePaymentOfLaunchTripButton" text="MaKe Payment of Launch Trip" />
+      <Button layoutX="56.0" layoutY="389.0" mnemonicParsing="false" onAction="#savepaymentinformationButton" text="Save payment information" />
+      <Button layoutX="56.0" layoutY="448.0" mnemonicParsing="false" onAction="#ViewNoticeFromCounterButton" text="View Notice From Ticket Counter" />
+      <Button layoutX="56.0" layoutY="490.0" mnemonicParsing="false" onAction="#DownloadTicketButton" text="Download Ticket" />
+      <Button layoutX="326.0" layoutY="532.0" mnemonicParsing="false" onAction="#LogOutButton" text="Log Out" />
+      <Label fx:id="seeYourIdPass" layoutX="516.0" layoutY="130.0" prefHeight="146.0" prefWidth="207.0" />
+   </children>
+</AnchorPane>

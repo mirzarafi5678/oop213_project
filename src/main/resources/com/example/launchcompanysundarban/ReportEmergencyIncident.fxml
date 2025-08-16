@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.launchcompanysundarban.ReportEmergencyIncidentController"
+      spacing="10">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <HBox spacing="8">
+        <Button fx:id="backBtn" text="◀ Back"/>
+        <Label text="Report Emergency Incident" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    </HBox>
+
+    <ComboBox fx:id="tripSelect" promptText="Select trip (ID, route, date)" prefWidth="500"/>
+    <TextArea fx:id="incidentDetails" promptText="Describe the emergency incident (what, where, when)" prefRowCount="4"/>
+    <Button fx:id="reportBtn" text="Report Incident" style="-fx-background-color: #C0392B; -fx-text-fill: white;"/>
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;"/>
+</VBox>

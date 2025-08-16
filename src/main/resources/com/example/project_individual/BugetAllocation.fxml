@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_individual.BugetAllocationController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="160.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+            <TableColumn fx:id="depositColumn" prefWidth="75.0" text="Deposit" />
+            <TableColumn fx:id="expenseColumn" prefWidth="75.0" text="Expense" />
+            <TableColumn fx:id="datecolumn" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="revenueColumn" prefWidth="75.0" text="Revenue" />
+        </columns>
+      </TableView>
+      <Label fx:id="expenseLabal" layoutX="14.0" layoutY="12.0" prefHeight="52.0" prefWidth="202.0" text="totalExpense:" />
+      <Label fx:id="Profit" layoutX="7.0" layoutY="76.0" prefHeight="52.0" prefWidth="202.0" text="Profit:" />
+      <Button layoutX="478.0" layoutY="25.0" mnemonicParsing="false" onAction="#backButton" text="Back Dashboard" />
+      <Button layoutX="490.0" layoutY="83.0" mnemonicParsing="false" onAction="#SearchButton" text="Search" />
+      <TextField fx:id="SearchBudgetField" layoutX="315.0" layoutY="84.0" promptText="SearchBudget" />
+      <Button layoutX="367.0" layoutY="25.0" mnemonicParsing="false" onAction="#calculateButton" text="Calculate" />
+   </children>
+</AnchorPane>

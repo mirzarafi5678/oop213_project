@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="661.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_individual.CallRecordController">
+   <children>
+      <Button layoutX="296.0" layoutY="231.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="26.0" prefWidth="215.0" text="Back" />
+      <TableView fx:id="TableView" layoutX="2.0" layoutY="375.0" prefHeight="201.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="callerIDColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="CallerNameColumn" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="CallDateColumn" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="CallerEmailIDColumn" prefWidth="75.0" text="Email ID" />
+            <TableColumn fx:id="CallTypeColumn" prefWidth="75.0" text="Call Type" />
+            <TableColumn fx:id="EmergencyCallColumn" prefWidth="75.0" text="Emergency" />
+            <TableColumn fx:id="CallDetailsColumn" prefWidth="75.0" text="Details" />
+        </columns>
+      </TableView>
+      <Button layoutX="296.0" layoutY="269.0" mnemonicParsing="false" onAction="#saveButton" prefHeight="26.0" prefWidth="215.0" text="Save" />
+      <TextField fx:id="CallerIDFoield" layoutX="36.0" layoutY="49.0" promptText="Caller ID" />
+      <TextField fx:id="CallerNameField" layoutX="36.0" layoutY="90.0" promptText="Caller Name" />
+      <DatePicker fx:id="CallDate" layoutX="36.0" layoutY="132.0" prefHeight="26.0" prefWidth="160.0" promptText="Date Of Call" />
+      <Text layoutX="259.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Call Record " wrappingWidth="74.0" />
+      <TextField fx:id="CallerEmailIDField" layoutX="36.0" layoutY="164.0" promptText="Caller Email id" />
+      <TextField fx:id="CallDetailsField" layoutX="36.0" layoutY="198.0" prefHeight="97.0" prefWidth="160.0" promptText="Call Details" />
+      <ComboBox fx:id="CallTypeComboBox" layoutX="329.0" layoutY="50.0" prefWidth="150.0" promptText="CallTypeComboBox" />
+      <Text layoutX="247.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency Case :" />
+      <Button layoutX="297.0" layoutY="308.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="26.0" prefWidth="215.0" text="Delete" />
+      <RadioButton fx:id="yesRadioButton" layoutX="359.0" layoutY="95.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="noRadioButton" layoutX="466.0" layoutY="95.0" mnemonicParsing="false" text="NO" />
+   </children>
+</AnchorPane>

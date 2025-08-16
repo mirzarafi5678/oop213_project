@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="580.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_oop213.MirzaMdSufianHridoy.PassengerController.RateFeedbackPageController1">
+   <children>
+      <RadioButton fx:id="radio1" layoutX="285.0" layoutY="57.0" mnemonicParsing="false" text="Satisfied" />
+      <RadioButton fx:id="radio2" layoutX="410.0" layoutY="57.0" mnemonicParsing="false" text="Not satisfied" />
+      <Label layoutX="75.0" layoutY="57.0" />
+      <Label layoutX="29.0" layoutY="57.0" prefHeight="17.0" prefWidth="230.0" text="How satisfied are you with staff behaviour" />
+      <Label layoutX="29.0" layoutY="104.0" prefHeight="17.0" prefWidth="221.0" text="How satisfied are you with food quality" />
+      <RadioButton fx:id="radio3" layoutX="274.0" layoutY="104.0" mnemonicParsing="false" text="Satisfied" />
+      <RadioButton fx:id="radio4" layoutX="410.0" layoutY="104.0" mnemonicParsing="false" text="Not satisfied" />
+      <Label layoutX="29.0" layoutY="158.0" prefHeight="17.0" prefWidth="182.0" text="How is the ticket buying process?" />
+      <RadioButton fx:id="radio5" layoutX="274.0" layoutY="158.0" mnemonicParsing="false" text="Good" />
+      <RadioButton fx:id="radio6" layoutX="388.0" layoutY="158.0" mnemonicParsing="false" text="Bad" />
+      <Label layoutX="29.0" layoutY="199.0" prefHeight="17.0" prefWidth="340.0" text="How would you rate the cleanliness and comfort of the launch" />
+      <RadioButton fx:id="radio7" layoutX="385.0" layoutY="199.0" mnemonicParsing="false" text="Excellent" />
+      <RadioButton fx:id="radio8" layoutX="477.0" layoutY="199.0" mnemonicParsing="false" text="poor" />
+      <Label layoutX="29.0" layoutY="239.0" prefHeight="17.0" prefWidth="213.0" text="How did you feel during the journey?" />
+      <RadioButton fx:id="radio9" layoutX="266.0" layoutY="239.0" mnemonicParsing="false" text="Safe" />
+      <RadioButton fx:id="radio10" layoutX="351.0" layoutY="239.0" mnemonicParsing="false" text="Unsafe" />
+      <Label layoutX="29.0" layoutY="296.0" prefHeight="17.0" prefWidth="213.0" text="If you want to give feedback write here" />
+      <TextField fx:id="WriteFeedbackTF" layoutX="251.0" layoutY="292.0" prefHeight="131.0" prefWidth="318.0" />
+      <Button layoutX="298.0" layoutY="446.0" mnemonicParsing="false" onAction="#SubmitButton" text="Submit" />
+      <Button layoutX="18.0" layoutY="530.0" mnemonicParsing="false" onAction="#DashboardButton" text="Back to dashboard" />
+   </children>
+</AnchorPane>

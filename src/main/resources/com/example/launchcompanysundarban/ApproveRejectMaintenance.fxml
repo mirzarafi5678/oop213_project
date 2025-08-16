@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.launchcompanysundarban.ApproveRejectMaintenanceController" spacing="10">
+    <padding>
+        <Insets top="15.0" right="15.0" bottom="15.0" left="15.0"/>
+    </padding>
+
+    <HBox spacing="8">
+        <Button fx:id="backBtn" text="◀ Back"/>
+        <Label text="Approve / Reject Maintenance" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    </HBox>
+
+    <TableView fx:id="maintenanceTable" prefHeight="220">
+        <columns>
+            <TableColumn fx:id="colRequestId" text="Request ID"/>
+            <TableColumn fx:id="colLaunchId" text="Launch ID"/>
+            <TableColumn fx:id="colDescription" text="Description"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="8">
+        <Button fx:id="approveBtn" text="Approve"/>
+        <Button fx:id="rejectBtn" text="Reject"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;"/>
+</VBox>

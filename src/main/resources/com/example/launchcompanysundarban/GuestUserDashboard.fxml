@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.launchcompanysundarban.GuestUserDashboardController">
+
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #f4f4f4; -fx-padding: 15;">
+            <Label text="Guest Goals" style="-fx-font-weight: bold;"/>
+            <Button text="Search Launch Trip" onAction="#loadSearchLaunchTrip"/>
+            <Button text="Book Launch Trip" onAction="#loadBookLaunchTrip"/>
+            <Button text="View Safety Instructions" onAction="#loadViewSafetyInstructions"/>
+            <Button text="Read Company Services" onAction="#loadReadCompanyServices"/>
+            <Button text="Contact Help or Support" onAction="#loadContactHelpOrSupport"/>
+            <Button text="View Special Offers" onAction="#loadViewSpecialOffers"/>
+            <Button text="Register as Passenger" onAction="#loadRegisterAsPassenger"/>
+            <Button text="How to Use Application" onAction="#loadHowToUseApplication"/>
+            <Separator/>
+            <Button text="Back to Login" onAction="#backToLogin" style="-fx-background-color: #E74C3C; -fx-text-fill: white;"/>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="centerStack" style="-fx-padding: 20;">
+            <Label text="Select a task from the left menu" style="-fx-font-size: 16px;"/>
+        </StackPane>
+    </center>
+</BorderPane>

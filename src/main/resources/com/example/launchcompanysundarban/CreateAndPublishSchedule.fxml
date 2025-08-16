@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.launchcompanysundarban.CreateAndPublishScheduleController" spacing="10">
+    <padding>
+        <Insets top="15.0" right="15.0" bottom="15.0" left="15.0"/>
+    </padding>
+
+    <HBox spacing="8">
+        <Button fx:id="backBtn" text="◀ Back"/>
+        <Label text="Create &amp; Publish Schedule" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    </HBox>
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Trip ID (optional):" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="tripIdField" GridPane.rowIndex="0" GridPane.columnIndex="1" promptText="Leave blank to auto-generate"/>
+
+        <Label text="Route:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="routeField" GridPane.rowIndex="1" GridPane.columnIndex="1" promptText="e.g., Dhaka -> Barisal"/>
+
+        <Label text="Date:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <DatePicker fx:id="datePicker" GridPane.rowIndex="2" GridPane.columnIndex="1" promptText="Select travel date"/>
+
+        <Label text="Time:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="timeField" promptText="HH:mm (24h)" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+        <Label text="Launch ID:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <TextField fx:id="launchIdField" GridPane.rowIndex="4" GridPane.columnIndex="1" promptText="e.g., L-101"/>
+
+        <Label text="Fare:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <TextField fx:id="fareField" GridPane.rowIndex="5" GridPane.columnIndex="1" promptText="Numeric only, e.g., 450"/>
+    </GridPane>
+
+    <Button fx:id="publishBtn" text="Publish Schedule" maxWidth="220"/>
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;"/>
+</VBox>

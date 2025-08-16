@@ -1,0 +1,2 @@
+admin,Sundarban Admin,admin123,Operation Manager
+customer,Demo Customer,cust123,Customer

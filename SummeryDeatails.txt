@@ -1,0 +1,12 @@
+Total revenue generated: 47960
+Toal booked seat: 33
+Name: john | Gender: Male | Seat: Sitting Seats (1) | Cargo: 11 | Seats: 11 | Contact: 21 | Total: 16720
+  Trip: 116 | Dhaka → Vola | Start: 8:30AM | Hrs: 13 | Price: 1300 | Date: 19-04-2025
+
+Name: sadman | Gender: Male | Seat: Sitting Seats (2) | Cargo: 11 | Seats: 11 | Contact: 21 | Total: 12320
+  Trip: 112 | Sylhet → Sylhet | Start: 5:10AM | Hrs: 8 | Price: 900 | Date: 12-03-2025
+
+Name: aearfat | Gender: Male | Seat: Sitting Seats (3) | Cargo: 11 | Seats: 11 | Contact: 21 | Total: 18920
+  Trip: 113 | Chittagong → Chadpur | Start: 11:10AM | Hrs: 3 | Price: 1500 | Date: 15-03-2025
+
+

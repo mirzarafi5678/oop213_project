@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.launchcompanysundarban.MarkTripAsDelayedController"
+      spacing="10">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <HBox spacing="8">
+        <Button fx:id="backBtn" text="◀ Back"/>
+        <Label text="Mark Trip as Delayed" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    </HBox>
+
+    <ComboBox fx:id="tripSelect" promptText="Select trip (ID, route, date)" prefWidth="500"/>
+    <DatePicker fx:id="newDate" promptText="New Departure Date"/>
+    <TextField fx:id="newTime" promptText="New Departure Time (HH:mm)"/>
+    <Button fx:id="delayBtn" text="Mark as Delayed" style="-fx-background-color: #F39C12; -fx-text-fill: white;"/>
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;"/>
+</VBox>

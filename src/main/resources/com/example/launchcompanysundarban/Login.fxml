@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.launchcompanysundarban.LoginController">
+
+    <top>
+        <Label text="Sundarban Launch Company"
+               style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2E86C1;"
+               BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="20" bottom="20"/>
+            </BorderPane.margin>
+        </Label>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <padding>
+                <Insets top="30" right="20" bottom="30" left="20"/>
+            </padding>
+
+            <Label text="Login to Continue" style="-fx-font-size: 18px;"/>
+
+            <TextField fx:id="usernameField" promptText="Username" maxWidth="250"/>
+
+            <PasswordField fx:id="passwordField" promptText="Password" maxWidth="250"/>
+            <TextField fx:id="passwordVisibleField" promptText="Password" maxWidth="250" visible="false" managed="false"/>
+
+            <CheckBox fx:id="showPasswordCheck" text="Show Password"/>
+
+            <ComboBox fx:id="roleCombo" maxWidth="250"/>
+
+            <Label fx:id="validationLabel" style="-fx-text-fill: red;"/>
+
+            <HBox spacing="15" alignment="CENTER">
+                <Button fx:id="loginBtn" text="Login" prefWidth="120" style="-fx-background-color: #2ECC71; -fx-text-fill: white;"/>
+                <Button fx:id="visitGuestBtn" text="Visit as Guest" prefWidth="120" style="-fx-background-color: #3498DB; -fx-text-fill: white;"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

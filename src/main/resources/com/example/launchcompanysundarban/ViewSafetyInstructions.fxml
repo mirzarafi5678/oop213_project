@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.launchcompanysundarban.ViewSafetyInstructionsController"
+      spacing="10" style="-fx-padding: 20;">
+
+    <HBox spacing="8">
+        <Button fx:id="backBtn" text="◀ Back"/>
+        <Pane HBox.hgrow="ALWAYS"/>
+        <Button fx:id="loginBtn" text="Login / Passenger"/>
+    </HBox>
+
+    <TextArea fx:id="safetyArea" wrapText="true" editable="false" prefHeight="300" prefWidth="500"/>
+</VBox>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="671.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_oop213.MirzaMdSufianHridoy.PassengerController.ViewOtherTripController1">
+   <children>
+      <TableView fx:id="Tableview" layoutX="14.0" layoutY="132.0" prefHeight="356.0" prefWidth="876.0">
+        <columns>
+          <TableColumn fx:id="TripNumberColumn" prefWidth="124.0" text="Trip Number" />
+          <TableColumn fx:id="FromColumn" prefWidth="138.0" text="From" />
+            <TableColumn fx:id="ToColumn" prefWidth="104.0" text="To" />
+            <TableColumn fx:id="DateColumn" prefWidth="140.0" text="Date" />
+            <TableColumn fx:id="StartTimeColumn" prefWidth="170.0" text="Start Time" />
+            <TableColumn fx:id="EstimatedJourneyHourColumn" prefWidth="166.0" text="Estimated Journey Hour" />
+        </columns>
+      </TableView>
+      <Label layoutX="25.0" layoutY="50.0" text="Filter the table by lowest journey hour" />
+      <TextField fx:id="LowestJourneyTF" layoutX="237.0" layoutY="46.0" />
+      <Button layoutX="83.0" layoutY="93.0" mnemonicParsing="false" onAction="#FilterButton" text="Filter" />
+      <Button layoutX="83.0" layoutY="530.0" mnemonicParsing="false" onAction="#ShowMyLaunchTripButton" text="Show my launch trip ticket from table" />
+      <Label fx:id="StatusShow" layoutX="334.0" layoutY="507.0" prefHeight="132.0" prefWidth="455.0" style="-fx-border-color: black;" />
+      <Button layoutX="105.0" layoutY="602.0" mnemonicParsing="false" onAction="#DahboardButton" text="Back to dashboard" />
+      <Button layoutX="637.0" layoutY="93.0" mnemonicParsing="false" onAction="#LoadTableButton" text="Load Table" />
+   </children>
+</AnchorPane>

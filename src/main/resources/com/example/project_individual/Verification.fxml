@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="547.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_individual.VerificationController">
+   <children>
+      <TextField fx:id="inputIdTextField" layoutX="28.0" layoutY="43.0" promptText="Input ID" />
+      <Label fx:id="messageLabel" layoutX="224.0" layoutY="25.0" prefHeight="63.0" prefWidth="174.0" style="-fx-background-color: tan;" text="Message" />
+      <Button layoutX="504.0" layoutY="22.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button layoutX="504.0" layoutY="56.0" mnemonicParsing="false" onAction="#updateButton" text="Update" />
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="174.0" prefHeight="200.0" prefWidth="652.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="emailidColumn" prefWidth="75.0" text=" Email ID" />
+            <TableColumn fx:id="CallTypeColumn" prefWidth="75.0" text="Call Type" />
+            <TableColumn fx:id="emergencyColumn" prefWidth="75.0" text="Emergency" />
+            <TableColumn fx:id="detailsColumn" prefWidth="75.0" text="Details" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

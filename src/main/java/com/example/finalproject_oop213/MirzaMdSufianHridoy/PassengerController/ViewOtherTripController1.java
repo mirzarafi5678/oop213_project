@@ -100,7 +100,7 @@ public class ViewOtherTripController1 {
             while (true) {
                 try {
                     LaunchTrip trip = (LaunchTrip) ois.readObject();
-                    System.out.println(trip.getTripnumber());
+//                    System.out.println(trip.getTripnumber());
                     Tableview.getItems().add(trip);
 
                 } catch (EOFException e) {

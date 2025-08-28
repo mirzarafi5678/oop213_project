@@ -66,12 +66,14 @@ public class BuyLaunchTripPageController2 {
 
     @javafx.fxml.FXML
     public void loadtablebutton (ActionEvent actionEvent) {
+
+        TableviewShow.getItems().clear();
         File f = new File("LaunchInfo.bin");
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(f))) {
             while (true) {
                 try {
                     LaunchTrip trip = (LaunchTrip) ois.readObject();
-                    System.out.println(trip.getTripnumber());
+//                    System.out.println(trip.getTripnumber());
                     TableviewShow.getItems().add(trip);
 
                 } catch (EOFException e) {
@@ -111,11 +113,7 @@ public class BuyLaunchTripPageController2 {
       }
 
 
-        if (   sessionmanager.latestuser.pass!=null  && sessionmanager.latestuser.pass.obj !=null){
-            aa.setContentText("You Already Bought the ticket");
-            aa.show();
-            return;
-        }
+
 
 
 

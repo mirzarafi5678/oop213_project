@@ -2,25 +2,18 @@
 ===========================
       PASSENGER TICKET
 ===========================
-Full Name       : rafi
-bKash Number    : 131
-Phone No        : 013
+Full Name       : sadman rahman
+bKash Number    : 01971563
+Phone No        : 019823
 Gender          : Male
-Type of Seat    : Chair Seats
-Cargo Space     : 2
-No. of Tickets  : 11
-Bought Ticket   : true
-Cancelled Ticket: false
+Type of Seat    : Sitting Seats
+Cargo Space     : 11
+No. of Tickets  : 3
+Bought Ticket   : false
+Cancelled Ticket: true
 Gave Feedback   : false
-Total Price     : 17640
+Total Price     : 0
 ---------------------------
    LAUNCH TRIP DETAILS
 ---------------------------
-  Trip Number    : 113
-  From           : Chittagong
-  To             : Chadpur
-  Start Time     : 11:10AM
-  Estimated Hour : 3
-  Price          : 1500
-  Date           : 15-03-2025
-===========================
+  No trip assigned%n===========================

@@ -1,9 +1,9 @@
-The per person cost of your selected Sundarbans launch trip is 1500 TK
-You have selected 11 seats
+The per person cost of your selected Sundarbans launch trip is 950 TK
+You have selected 6 seats
 An additional 100 TK applies for the selected Chair Seats
-And cargo space is charged at 20 TK per kg. You have taken 2 kg of space.
-Base Ticket Price: 16500
-Cargo Space Charge: 40
-Seat Type Charge: 1100
+And cargo space is charged at 20 TK per kg. You have taken 10 kg of space.
+Base Ticket Price: 5700
+Cargo Space Charge: 200
+Seat Type Charge: 600
 ------------------------
-Total Price: 17640
+Total Price: 6500
